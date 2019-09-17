@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate_Account</title>
+</head>
+<body>
+<script>
+    function check_Account(str) {
+        let regxn = /^[_a-z0-9]{6,}$/;
+            if(regxn.test(str)){
+                document.write("Account invalid"+'</br>');
+            }else{
+                document.write(" Not Account invalid"+'</br>');
+            }
+
+    }
+    check_Account("123abc_");
+    check_Account("_abc123");
+    check_Account("12345");
+    check_Account("abcde ");
+    
+</script>
+</body>
+</html>
